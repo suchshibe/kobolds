@@ -1,38 +1,183 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Fauna+One');
+
+:root {
+  --bg-color: rgba(223,228,252, 1);
+  --text-color: rgba(0,69,161, 1);
+  --text-soft-color: rgba(0,82,188, 1);
+  --text-strong-color: rgba(0,69,161, 1);
+  --subtle-color: rgba(230,234,253, 1);
+  --border-color: rgba(155,172,235, 1);
+  --shadow-color: rgba(151,168,230, 1);
+  --input-color: rgba(255,255,255, 1);
+  --outline-color: rgba(142,165,244, 1);
+  --mark-color: rgba(0,69,161, 0.08);
+  --special-color: rgba(0,69,161, 1);
+  --special-bg-color: rgba(0,83,189, 1);
+  --special-text-color: rgba(255,255,255, 1);
+  --special-shadow-color: rgba(42,48,69, 1);
+  --special-mark-color: rgba(255,255,255, 0.08);
+  --light-color: rgba(241,243,255, 1);
+  --dark-color: rgba(62,70,98, 1);
+  --text-color-rgb: 0,69,161;
+  --bg-color-rgb: 223,228,252;
+  --subtle-color-rgb: 230,234,253;
+  --special-color-rgb: 0,69,161;
+  --special-text-color-rgb: 255,255,255;
+  --special-bg-color-rgb: 0,83,189;
+  --shadow-color-rgb: 151,168,230;
+  --special-shadow-color-rgb: 42,48,69;
+  --outline-color-rgb: 142,165,244;
+  --dark-color-rgb: 62,70,98;
+  --light-color-rgb: 241,243,255;
+  --main-color: #9829d5 ;
+  --light-shade: #eff0e4;
+  --light-accent: #beaca3;
+  --dark-shade: #696b95;
+  --dark-accent: #2a3d56;
+}
+
+:root {
+  background: var(--dark-accent);
+  color: var(--light-accent);
+}
+
+* {
+
+  font-size: 20px;
+}
+
+#grid{
+  display: grid;
+  
+  height: 100vh;
+  width: 100vw;
+  grid-template: 1fr 8fr 1fr / 1fr 5fr;
+  /* ^ Same thing as below
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto 1fr;
+  */
+  gap: 5px;
+  grid-template-areas: 
+  "gamemenu gamemenu gamemenu"
+  "buildingsmenu content resources"
+  "otherstuff footer footer";
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+a:active {
+  background-color: var(--light-accent);
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', serif ;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: block;
   text-align: center;
+  justify-self: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+div{
+  font-family: 'Fauna One';
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.menu {
+  background-color: var(--dark-shade);
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 1px;
+  /*border-color: var(--light-accent);*/
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gamemenu {
+  grid-area: gamemenu;
+  text-align: center;
+  text-justify: center;
+  text-orientation: sideways;
+}
+
+.areaItem {
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid #2a3d56;
+  text-decoration: none;
+  padding: 3px;
+  font-family: 'Fauna One';
+}
+.areaItem:hover {
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+}
+.areaItem:active {
+  background-color: var(--light-accent);
+  color: white;
+  text-decoration: none;
+}
+
+.buildingsmenu {
+  text-decoration: none;
+  list-style-type: none;
+  grid-area: buildingsmenu;
+  justify-content:space-around;
+}
+
+.content {
+  grid-area: content;
+}
+
+.resources {
+  grid-area: resources;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+#resources{
+  font-size: 20;
+}
+
+
+/* Background Images */
+
+.fields {
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/background-areaFields.png");
+}
+
+.cavern {
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/background-areaCavern.png");
+}
+
+.Forest {
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/background-areaForest.png");
+}
+.Lake {
+  width: 100%;
+  height: 100%;
+  background-image: url("assets/background-areaLake.png");
+}
+
+.areaText {
+  background-color: #555;
 }
