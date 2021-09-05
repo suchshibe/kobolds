@@ -1,35 +1,35 @@
-@import url('https://fonts.googleapis.com/css?family=Cinzel|Fauna+One');
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Fauna+One");
 
 :root {
-  --bg-color: rgba(223,228,252, 1);
-  --text-color: rgba(0,69,161, 1);
-  --text-soft-color: rgba(0,82,188, 1);
-  --text-strong-color: rgba(0,69,161, 1);
-  --subtle-color: rgba(230,234,253, 1);
-  --border-color: rgba(155,172,235, 1);
-  --shadow-color: rgba(151,168,230, 1);
-  --input-color: rgba(255,255,255, 1);
-  --outline-color: rgba(142,165,244, 1);
-  --mark-color: rgba(0,69,161, 0.08);
-  --special-color: rgba(0,69,161, 1);
-  --special-bg-color: rgba(0,83,189, 1);
-  --special-text-color: rgba(255,255,255, 1);
-  --special-shadow-color: rgba(42,48,69, 1);
-  --special-mark-color: rgba(255,255,255, 0.08);
-  --light-color: rgba(241,243,255, 1);
-  --dark-color: rgba(62,70,98, 1);
-  --text-color-rgb: 0,69,161;
-  --bg-color-rgb: 223,228,252;
-  --subtle-color-rgb: 230,234,253;
-  --special-color-rgb: 0,69,161;
-  --special-text-color-rgb: 255,255,255;
-  --special-bg-color-rgb: 0,83,189;
-  --shadow-color-rgb: 151,168,230;
-  --special-shadow-color-rgb: 42,48,69;
-  --outline-color-rgb: 142,165,244;
-  --dark-color-rgb: 62,70,98;
-  --light-color-rgb: 241,243,255;
-  --main-color: #9829d5 ;
+  --bg-color: rgba(223, 228, 252, 1);
+  --text-color: rgba(0, 69, 161, 1);
+  --text-soft-color: rgba(0, 82, 188, 1);
+  --text-strong-color: rgba(0, 69, 161, 1);
+  --subtle-color: rgba(230, 234, 253, 1);
+  --border-color: rgba(155, 172, 235, 1);
+  --shadow-color: rgba(151, 168, 230, 1);
+  --input-color: rgba(255, 255, 255, 1);
+  --outline-color: rgba(142, 165, 244, 1);
+  --mark-color: rgba(0, 69, 161, 0.08);
+  --special-color: rgba(0, 69, 161, 1);
+  --special-bg-color: rgba(0, 83, 189, 1);
+  --special-text-color: rgba(255, 255, 255, 1);
+  --special-shadow-color: rgba(42, 48, 69, 1);
+  --special-mark-color: rgba(255, 255, 255, 0.08);
+  --light-color: rgba(241, 243, 255, 1);
+  --dark-color: rgba(62, 70, 98, 1);
+  --text-color-rgb: 0, 69, 161;
+  --bg-color-rgb: 223, 228, 252;
+  --subtle-color-rgb: 230, 234, 253;
+  --special-color-rgb: 0, 69, 161;
+  --special-text-color-rgb: 255, 255, 255;
+  --special-bg-color-rgb: 0, 83, 189;
+  --shadow-color-rgb: 151, 168, 230;
+  --special-shadow-color-rgb: 42, 48, 69;
+  --outline-color-rgb: 142, 165, 244;
+  --dark-color-rgb: 62, 70, 98;
+  --light-color-rgb: 241, 243, 255;
+  --main-color: #9829d5;
   --light-shade: #eff0e4;
   --light-accent: #beaca3;
   --dark-shade: #696b95;
@@ -42,13 +42,12 @@
 }
 
 * {
-
   font-size: 20px;
 }
 
-#grid{
+#grid {
   display: grid;
-  
+
   height: 100vh;
   width: 100vw;
   grid-template: 1fr 8fr 1fr / 1fr 5fr;
@@ -57,10 +56,10 @@
   grid-template-rows: auto 1fr;
   */
   gap: 5px;
-  grid-template-areas: 
-  "gamemenu gamemenu gamemenu"
-  "buildingsmenu content resources"
-  "otherstuff footer footer";
+  grid-template-areas:
+    "gamemenu gamemenu gamemenu"
+    "buildingsmenu content resources"
+    "otherstuff footer footer";
 }
 
 a {
@@ -72,11 +71,15 @@ a:visited {
 }
 a:active {
   background-color: var(--light-accent);
-
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cinzel', serif ;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cinzel", serif;
   margin-top: 20px;
   margin-bottom: 5px;
   display: block;
@@ -84,8 +87,8 @@ h1, h2, h3, h4, h5, h6 {
   justify-self: center;
 }
 
-div{
-  font-family: 'Fauna One';
+div {
+  font-family: "Fauna One";
   color: white;
 }
 
@@ -111,7 +114,7 @@ div{
   border-bottom: 1px solid #2a3d56;
   text-decoration: none;
   padding: 3px;
-  font-family: 'Fauna One';
+  font-family: "Fauna One";
 }
 .areaItem:hover {
   background-color: #555;
@@ -128,7 +131,7 @@ div{
   text-decoration: none;
   list-style-type: none;
   grid-area: buildingsmenu;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .content {
@@ -147,11 +150,9 @@ li {
   list-style-type: none;
 }
 
-
-#resources{
+#resources {
   font-size: 20;
 }
-
 
 /* Background Images */
 
