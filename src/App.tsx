@@ -13,7 +13,7 @@ function UpdateCount(count: { clicks: number }) {
   return { clicks: count.clicks + 1 };
 }
 
-function App() {
+function App(): JSX.Element {
   const [State, IncrementState] = useReducer(UpdateCount, globalclicks);
   console.log(State);
   return (

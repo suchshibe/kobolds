@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { Link } from "react-router-dom";
 
-function Buildings() {
+function Buildings(): JSX.Element {
   return (
     <div className="menu buildingsmenu">
       <h5 className="title buildings">Area Selector</h5>

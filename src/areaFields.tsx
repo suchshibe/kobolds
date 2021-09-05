@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-function areaFields() {
+function areaFields(): JSX.Element {
   return (
     <div className="fields">
       Endless fields reach out around in all directions. A cool, soft breeze
