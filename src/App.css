@@ -159,23 +159,27 @@ li {
   width: 100%;
   height: 100%;
   background-image: url("assets/background-areaFields.png");
+  background-size: 100% 100%;
 }
 
 .cavern {
   width: 100%;
   height: 100%;
   background-image: url("assets/background-areaCavern.png");
+  background-size: 100% 100%;
 }
 
 .Forest {
   width: 100%;
   height: 100%;
   background-image: url("assets/background-areaForest.png");
+  background-size: 100% 100%;
 }
 .Lake {
   width: 100%;
   height: 100%;
   background-image: url("assets/background-areaLake.png");
+  background-size: 100% 100%;
 }
 
 .areaText {
