@@ -7,15 +7,21 @@ import areaForest from "./areaForest";
 import areaLake from "./areaLake";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-const globalclicks = { clicks: 0 };
+const localClicks = Number(localStorage.getItem("clicks"));
+
+const globalclicks = { clicks: localClicks };
 
 function UpdateCount(count: { clicks: number }) {
-  return { clicks: count.clicks + 1 };
+  const newCount = count.clicks + 1;
+
+  localStorage.setItem("clicks", newCount.toString());
+
+  return { clicks: newCount };
 }
 
 function App(): JSX.Element {
   const [State, IncrementState] = useReducer(UpdateCount, globalclicks);
-  console.log(State);
+
   return (
     <Router>
       <div id="grid">
